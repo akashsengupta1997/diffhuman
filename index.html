@@ -4,28 +4,28 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <meta name="description" content="Given a single RGB image of a person, DiffHuman generates multiple detailed, sharp and diverse photorealistic 3D reconstructions that are consistent with the input image.">
+  <meta property="og:title" content="DiffHuman: Probabilistic Photorealistic 3D Reconstruction of Humans"/>
+  <meta property="og:description" content="Given a single RGB image of a person, DiffHuman generates multiple detailed, sharp and diverse photorealistic 3D reconstructions that are consistent with the input image."/>
+  <meta property="og:url" content="https://akashsengupta1997.github.io/diffhuman/"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <meta name="twitter:title" content="DiffHuman: Probabilistic Photorealistic 3D Reconstruction of Humans">
+  <meta name="twitter:description" content="Given a single RGB image of a person, DiffHuman generates multiple detailed, sharp and diverse photorealistic 3D reconstructions that are consistent with the input image.">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="keywords" content="Diffusion models, 3D reconstruction, 3D diffusion, 3D humans, photorealistic reconstruction, human avatar, 3D generative models">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <title>DiffHuman: Probabilistic Photorealistic 3D Reconstruction of Humans</title>
+  <link rel="icon" type="image/x-icon" href="static/images/google.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -43,6 +43,11 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
 </head>
 <body>
 
@@ -52,68 +57,73 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">DiffHuman: Probabilistic Photorealistic 3D Reconstruction of Humans</h1>
+            <h1 class="title is-3 is-light publication-venue" style="text-align: center">CVPR 2024</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
+                <a href="https://akashsengupta1997.github.io/" target="_blank">Akash Sengupta</a><sup>1,2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://research.google/people/thiemo-alldieck/" target="_blank">Thiemo Alldieck</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.nikoskolot.com/" target="_blank">Nikos Kolotouros</a><sup>1</sup>,
+              </span>
+              <br>
+              <span class="author-block">
+                <a href="https://enriccorona.github.io/" target="_blank">Enric Corona</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.es/citations?user=8lmzWycAAAAJ" target="_blank">Andrei Zanfir</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://research.google/people/cristian-sminchisescu/" target="_blank">Cristian Sminchisescu</a><sup>1</sup>
+              </span>
+
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block"><sup>1</sup>Google Research, <sup>2</sup>University of Cambridge</span>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
-                         <!-- Arxiv PDF link -->
+                      <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://arxiv.org/pdf/2404.00485.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                         </span>
                         <span>Paper</span>
+                        </a>
+                      </span>
+
+                    <!-- ArXiv abstract Link -->
+                    <span class="link-block">
+                      <a href="https://arxiv.org/abs/2404.00485" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
+                    <!-- Video Link -->
                     <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      <a href="https://www.youtube.com/watch?v=C6PeP0ciyAo" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
+                        <i class="fab fa-youtube"></i>
                       </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
+                      <span>Video</span>
+                      </a>
                     </span>
-                    <span>Code</span>
-                  </a>
-                </span>
 
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+
+
             </div>
           </div>
         </div>
@@ -123,32 +133,73 @@
 </section>
 
 
-<!-- Teaser video-->
+<!-- Teaser Carousel -->
 <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
+  <div class="hero-body ">
+    <div class="container is-max-desktop">
+      <div id="teaser-carousel" class="carousel results-carousel">
+
+         <div class="item item-video0">
+          <video poster="" id="teaser-video0" autoplay muted loop playsinline height="100%" src="static/videos/teaser_0.mp4">
+          </video>
+          <h2 class="subtitle has-text-centered"  style="font-size: 18px;">
+          Monocular 3D human reconstruction is an ill-posed problem - multiple 3D solutions can explain a single 2D image, due to depth ambiguity, (self-)occlusion and unseen body parts.
+          DiffHuman predicts a <em>probability distribution</em> over photorealistic 3D reconstructions conditioned on a single RGB image.
+          </h2>
+        </div>
+
+        <div class="item item-video1">
+          <video poster="" id="teaser-video1" autoplay controls muted loop playsinline height="100%" src="static/videos/teaser_1.mp4">
+          </video>
+          <h2 class="subtitle has-text-centered"  style="font-size: 18px;">
+          We can sample several plausible, diverse and input-consistent reconstructions during inference, in contrast to deterministic approaches<sup>[<a href="https://phorhum.github.io/">1</a>,<a href="https://enriccorona.github.io/s3f/">2</a>]</sup> that output a single estimate.
+          </h2>
+        </div>
+
+        <div class="item item-video2">
+          <video poster="" id="teaser-video2" autoplay controls muted loop playsinline height="100%" src="static/videos/teaser_2.mp4">
+          </video>
+           <h2 class="subtitle has-text-centered"  style="font-size: 18px;">
+          Samples from DiffHuman exhibit a greater level of geometric and colour-wise detail than deterministic methods<sup>[<a href="https://phorhum.github.io/">1</a>,<a href="https://enriccorona.github.io/s3f/">2</a>]</sup>, particularly in unseen and uncertain regions of the human body such as the back-side.
+          </h2>
+        </div>
+
+        <div class="item item-video3">
+          <video poster="" id="teaser-video3" autoplay controls muted loop playsinline height="100%"  src="static/videos/teaser_3.mp4">
+          </video>
+           <h2 class="subtitle has-text-centered"  style="font-size: 18px;">
+          Samples from DiffHuman exhibit a greater level of geometric and colour-wise detail than deterministic methods<sup>[<a href="https://phorhum.github.io/">1</a>,<a href="https://enriccorona.github.io/s3f/">2</a>]</sup>, particularly in unseen and uncertain regions of the human body such as the back-side.
+          </h2>
+        </div>
+
+      </div>
+
+<!--      <div class="references" style="font-size: 12px;">-->
+<!--      <br>-->
+<!--      [1] Alldieck et al. Photorealistic monocular 3D reconstruction of humans wearing clothing. In CVPR, 2022.<br>-->
+<!--      [2] Corona et al. Structured 3D features for reconstructing relightable and animatable avatars. In CVPR, 2023.-->
+<!--      </div>-->
+
     </div>
   </div>
 </section>
-<!-- End teaser video -->
+<!-- End Teaser Carousel -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-2">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            We present DiffHuman, a probabilistic method for photorealistic 3D human reconstruction from a single RGB image.
+            Despite the ill-posed nature of this problem, most methods are deterministic and output a single solution, often resulting in a lack of geometric detail and blurriness in unseen or uncertain regions.
+            In contrast, DiffHuman predicts a <em><b>probability distribution</b></em> over 3D reconstructions conditioned on an input 2D image, which allows us to sample multiple detailed 3D avatars that are consistent with the image.
+            DiffHuman is implemented as a conditional diffusion model that denoises pixel-aligned 2D observations of an underlying 3D shape representation.
+            During inference, we may sample 3D avatars by iteratively denoising 2D renders of the predicted 3D representation.
+            Furthermore, we introduce a generator neural network that approximates rendering with considerably reduced runtime (55x speed up), resulting in a novel dual-branch diffusion framework.
+            Our experiments show that DiffHuman can produce diverse and detailed reconstructions for the parts of the person that are unseen or uncertain in the input image, while remaining competitive with the state-of-the-art when reconstructing visible surfaces.
           </p>
         </div>
       </div>
@@ -158,60 +209,18 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
+<!-- Youtube video -->
 <section class="hero is-small">
   <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
+    <div class="container is-max-desktop">
       <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+      <h2 class="title is-2">Video Overview</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          
+
           <div class="publication-video">
             <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/C6PeP0ciyAo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -221,64 +230,215 @@
 <!-- End youtube video -->
 
 
-<!-- Video carousel -->
+<!-- Method carousel -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+
+      <h2 class="title is-2">Method</h2>
+
+      <div id="method-carousel" class="carousel results-carousel">
+
+        <div class="item">
+          <img src="static/images/method_1_gray.png" alt="DiffHuman Method Overview"/>
+          <h2 class="subtitle has-text-centered"  style="font-size: 16px;">
+            <br>
+            3D human avatars are represented as neural implicit surfaces \(\mathcal{S}\) - specifically as the zero-level-sets of signed distance fields (SDFs).
+            We predict a distribution over 3D human surfaces \(p_\Theta (\mathcal{S} | \mathbf{I})\) conditioned on an input image \(\mathbf{I}\)
+            using a <a href="https://hojonathanho.github.io/diffusion/"> denoising diffusion probabilistic model</a>.
+          </h2>
+        </div>
+        <div class="item">
+          <img src="static/images/method_2_gray.png" alt="DiffHuman Method Overview"/>
+          <h2 class="subtitle has-text-centered"  style="font-size: 16px;">
+            <br>
+            In practice, we model a distribution over image-based pixel-aligned <em>observations</em> of the surface \(\mathcal{S}\).
+            Front and back albedo images, surface normal images and depth maps comprise an "observation set" \(\boldsymbol{x}_0 = \{\mathbf{A}^F, \mathbf{A}^B, \mathbf{N}^F, \mathbf{N}^B, \mathbf{D}^F, \mathbf{D}^B \}\).
+            Since \(\boldsymbol{x}_0\) is effectively a multichannel image, we can borrow architectural components and methods from conventional image-based diffusion models.
+          </h2>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/method_3_gray.png" alt="DiffHuman Method Overview"/>
+          <h2 class="subtitle has-text-centered"  style="font-size: 16px;">
+            <br>
+            Our denoising diffusion model outputs a prediction of the “clean” observation set \(\boldsymbol{x}_{0_\Theta}^{(t)}\) given a noisy version \(\boldsymbol{x}_t\).
+            An underlying surface \(\mathcal{S}_\Theta^{(t)}\) is estimated as an <em>intermediate 3D representation</em> in each denoising step, given by the zero-level-set of an SDF \(f_\Theta^{(t)}\) conditioned on pixel-aligned features \(g_\Theta^{(t)} (\boldsymbol{x}_t, \mathbf{I})\).
+            \(f^{(t)}_\Theta\) and \(g^{(t)}_\Theta\) are both neural networks.
+            \(\boldsymbol{x}_{0_\Theta}^{(t)}\) is obtained by rendering \(\mathcal{S}_\Theta^{(t)}\).
+            <br>
+            <br>
+            During inference, we can sample trajectories over observation sets \(\boldsymbol{x}_{0:T} \sim p_\Theta(\boldsymbol{x}_{0:T} | \mathbf{I})\) by computing and rendering \(\mathcal{S}_\Theta^{(t)}\) in each denoising step.
+            The final implicit surface \(\mathcal{S} = \mathcal{S}_\Theta^{(1)}(\boldsymbol{x}_1, \mathbf I)\) represents a 3D reconstruction sample \(\mathcal{S} \sim p_\Theta(\mathcal{S}| \mathbf{I})\).
+         </h2>
+       </div>
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/method_4_gray.png" alt="DiffHuman Method Overview"/>
+        <h2 class="subtitle has-text-centered"  style="font-size: 16px;">
+          <br>
+          However, computing and rendering a neural implicit surface in every denoising step is very computationally expensive.
+          To alleviate this, we additionally train a "generator" neural network \(h_\Theta^{(t)}\) that directly maps features \(g_\Theta^{(t)} (\boldsymbol{x}_t, \mathbf{I})\) to \(\boldsymbol{x}_{0_\Theta}^{(t)}\) with an image-to-image architecture.
+          During inference, we denoise using \(h_\Theta^{(t)}\), and only explicitly compute a 3D surface in the final denoising step.
+          This results in a <b>55x</b> speed-up over rendering in every step.
+        </h2>
+        </div>
+        <div class="item">
+       <!-- Your image here -->
+        <img src="static/images/method_5_gray.png" alt="DiffHuman Method Overview"/>
+        <h2 class="subtitle has-text-centered"  style="font-size: 16px;">
+          <br>
+          In addition, we can produce a shaded render of \(\mathcal{S}\) using a pixel-wise shading network \(s_\Theta^{(t)}\)
+          that computes per-pixel RGB shading coefficients given the surface normal at that pixel, and an estimated scene illumination code \(\boldsymbol{l}(\mathbf{I})\).
+          The shaded render \(\mathbf{C}^{(t)}\) matches the input image, and allows us to decouple surface albedo and shading.
+        </h2>
+        </div>
+
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End Method carousel -->
+
+
+  <!-- Results -->
 <section class="hero is-small">
   <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
+    <div class="container is-max-desktop">
+
+    <h2 class="title is-2">Results</h2>
+
+      <!-- SOTA comparison carousel -->
+      <h2 class="subtitle is-4">Comparison against Deterministic Methods</h2>
       <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
+
+        <div class="item">
+          <div class="img-magnifier-container">
+            <img id="sota_compare_colour" src="static/images/sota_compare_colour.jpg"
+                 width="2039" height="900"
+                 alt="Comparison against deterministic methods that estimate both geometry and appearance."/>
+          </div>
+          <script> magnify("sota_compare_colour", 3); </script>
+          <h2 class="subtitle has-text-centered" style="font-size: 16px;">
+            (Hover to zoom)
+            <br>
+            This figure compares DiffHuman against <a href="https://phorhum.github.io/">PHORHUM</a> and <a href="https://enriccorona.github.io/s3f/">S3F</a>.
+            PHORHUM outputs excellent front predictions, but exhibits over-smooth, flat geometry and blurry colours on the back.
+            S3F yields more detailed geometry, but colours are still often blurry.
+            Moreover, both these methods occasionally paste the front colour predictions onto the back incorrectly (see row 3).
+            Samples from DiffHuman achieve a greater level of geometric detail and colour sharpness in uncertain regions.
+          </h2>
         </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
+        <div class="item">
+          <div class="img-magnifier-container">
+            <img id="sota_compare_geo" src="static/images/sota_compare_geo.jpg"
+                 width="2136" height="900"
+                 alt="Comparison against deterministic methods that estimate only geometry."/>
+          </div>
+          <script> magnify("sota_compare_geo", 3); </script>
+          <h2 class="subtitle has-text-centered" style="font-size: 16px;">
+            (Hover to zoom)
+            <br>
+            Here we compare DiffHuman against <a href="https://shunsukesaito.github.io/PIFuHD/">PIFuHD</a>,
+            <a href="https://icon.is.tue.mpg.de/">ICON</a> and <a href="https://xiuyuliang.cn/econ/">ECON</a>.
+            These deterministic methods often fall back towards the mean of the training data distribution
+            when faced with ambiguous and challenging inputs; e.g. predicting trousers from the back instead of a long skirt in row 3.
+            This can be mitigated by predicting distributions over reconstructions instead, thus modelling the inherent ambiguity in this task.
+          </h2>
         </div>
       </div>
+      <br>
+      <!-- End SOTA comparison carousel -->
+
+      <hr>
+
+      <!-- Trajectory and Diversity carousel -->
+      <h2 class="subtitle is-4">Denoising Trajectory and Diversity Visualisation</h2>
+        <div id="traj-carousel" class="carousel results-carousel">
+
+          <div class="item item-video0">
+            <video poster="" id="traj-video0" autoplay muted loop playsinline src="static/videos/traj.mp4"></video>
+             <h2 class="subtitle has-text-centered" style="font-size: 16px;">
+              This visualises the denoising trajectory for a single sample, showing the noisy observation set \(\boldsymbol{x}_t\)
+              and clean prediction \(\boldsymbol{x}^{(t)}_{0_\Theta}\) at each timestep. \(\boldsymbol{x}^{(t)}_{0_\Theta}\) is initially simple (see back normals);
+              geometric and colour-wise details develop over the reverse process.
+            </h2>
+          </div>
+
+          <div class="item item-video1">
+            <video poster="" id="div-video1" autoplay muted loop playsinline src="static/videos/div.mp4"></video>
+            <h2 class="subtitle has-text-centered" style="font-size: 16px;">
+              We can show the emergence of sample diversity over the reverse process using the per-pixel variance of the
+              observations in \(\boldsymbol{x}^{(t)}_{0_\Theta}\) at each timestep.
+              Blue indicates a lower variance and red indicates a higher variance, computed over 10 samples.
+              \(\boldsymbol{x}^{(t)}_{0_\Theta}\) becomes more diverse over time as the samples diverge.
+              The back surface is, intuitively, more uncertain than the front.
+            </h2>
+          </div>
+
+        </div>
+
+      <!-- End Trajectory and Diversity carousel -->
+
+      <hr>
+
+      <!-- Unconditional and Edge-conditioned carousel -->
+       <h2 class="subtitle is-4">Unconditional and Edge-Conditioned Samples</h2>
+        <div id="uncond-carousel" class="carousel results-carousel">
+
+          <div class="item item-video0">
+            <video poster="" id="uncond-video0" autoplay muted loop playsinline src="static/videos/uncond.mp4"></video>
+             <h2 class="subtitle has-text-centered" style="font-size: 16px;">
+               We can obtain unconditional samples from DiffHuman by training a model with random condition dropping.
+               These samples are generated from random noise only, which is masked using a silhouette in the shape of the desired subject.
+               However, faces and other details within the silhouette may be blurry, due to a lack of conditioning signal.
+            </h2>
+          </div>
+
+          <div class="item">
+            <div class="img-magnifier-container">
+              <img id="edge_cond" src="static/images/edge_cond.jpg"
+                   width="2606" height="1110"
+                   alt="Edge-conditioned samples."/>
+            </div>
+            <script> magnify("edge_cond", 3); </script>
+            <h2 class="subtitle has-text-centered" style="font-size: 16px;">
+              (Hover to zoom)
+              <br>
+              Conditioning on edge-maps enables finer control than masked random noise, e.g. over in-silhouette details such as facial features and clothing boundaries.
+              These samples are generated using a DiffHuman model that was pre-trained with conditioning RGB images,
+              and then fine-tuned using conditioning edge maps.
+              This demonstrates that samples from DiffHuman can be controlled via simpler conditioning inputs than full RGB images,
+              which opens the possibility for generative applications beyond reconstruction.
+            </h2>
+          </div>
+
+        </div>
+
+      <!-- End Unconditional and Edge-conditioned carousel -->
+
+
+
     </div>
   </div>
 </section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
 
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>
+        @inproceedings{
+          sengupta2024diffhuman,
+          author = {Sengupta, Akash and Alldieck, Thiemo and Kolotouros, Nikos and Corona, Enric and Zanfir, Andrei and Sminchisescu, Cristian},
+          title = {{DiffHuman: Probabilistic Photorealistic 3D Reconstruction of Humans}},
+          booktitle = {CVPR},
+          month = {June},
+          year = {2024}
+        }
+      </code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
@@ -303,7 +463,7 @@
 </footer>
 
 <!-- Statcounter tracking code -->
-  
+
 <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
     <!-- End of Statcounter Code -->
